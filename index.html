@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration form</title>
+    <!-- External css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <nav>
+            <a>Home</a><a>Aboutus</a><a>Contactus</a><a>Sing Up</a><a>Sign In</a>
+        </nav>
+        <section class="row">
+            <form action="success.html"  onsubmit="return validate()">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg"><div id="display-image"></div>
+                            </td>
+                        </tr>
+
+                    <tr>
+            <td><label for="firstname" id="FirstName">FirstName</label>
+                <b style="color:red;font-size:16px;">*</b>
+            </td>
+            <td><input type="text" name="FirstName" id="firstname" placeholder="andy">
+                <span id="errFirstName"></span>
+            </td>
+        </tr>
+           
+                    <tr>
+            <td><label for="LastName">LastName</label>
+                <b style="color:red;font-size:16px;">*</b>
+            </td>
+            <td><input type="text" name="LastName" id="lastname" placeholder="sins" >
+            <span id="errLastName"></span>
+            </td>
+
+                    </tr>
+                    <tr>
+            <td> <label for="fathername">FatherName</label>
+                <b style="color:red;font-size:16px;">*</b>
+            </td>
+            <td><input type="text" name="fathername" id="fathername" >
+                <span id="errFatherName"></span>
+            </td>
+
+                    </tr>
+
+                    <tr>
+            <td> <label for="mothername">MotherNmae</label>
+                <b style="color:red;font-size:16px;">*</b>
+            </td>
+            <td><input type="text" name="mothername" id="mothername">
+                <span id="errMotherName"></span>
+            </td>
+
+                    </tr>
+                    <tr>
+                        <td> <label for="gender">gender</label>
+                            <b style="color:red;font-size:16px;">*</b>
+                        </td>
+                        <td><input type="radio" name="male" id="male">Male
+                       <input type="radio" name="female" id="female">Female</td>
+            
+                                </tr>
+                    <tr>
+             <td>  <label for="phone">Mobile.No</label>
+                <b style="color:red;font-size:16px;">*</b>
+            </td>
+             <td><input type="phone" name="phone" id="phone" ></td>
+                    
+                    </tr>
+
+<tr>
+    <td><label for="email">Email</label></td>
+<td><input type="email" name="email" id="email" ></td>
+</tr>
+
+<tr>
+    <td><label for="registration">Registration No</label>
+        <b style="color:red;font-size:16px;">*</b>
+    </td>
+<td><input type="phone" name="registration" id="registration"></td>
+</tr>
+<tr>
+    <td><label for="dob">DOB</label>
+        <b style="color:red;font-size:16px;">*</b>
+    </td>
+<td><input type="date" name="dob" id="dob"></td>
+</tr>
+
+<tr>
+    <td><label for="semester">semester</label>
+        <b style="color:red;font-size:16px;">*</b>
+    </td>
+        <td><select id="semester" name="semester" style="width:150px ;">
+                                            <option value="select">Select</option>
+                                            <option value="I">I</option>
+                                            <option value="II">II</option>
+                                            <option value="III">III</option>
+                                            <option value="IV">IV</option>
+                                            <option value="V">V</option>
+                                            <option value="VI">VI</option>
+                                            <option value="VII">VII</option>
+                                            <option value="VIII">VIII</option>
+                                    </select></td>
+</tr>
+
+<tr>
+    <td><label for="religion">Religion</label>
+    
+    </td>
+        <td><select id="religion" name="religion" style="width:150px ;">
+                                            <option value="select">Select</option>
+                                            <option value="hindu">Hindu</option>
+                                            <option value="muslim">Muslim</option>
+                                            <option value="sikh">Sikh</option>
+                                            <option value="ismal">Islam</option>
+                                            <option value="christin">Christin</option>
+                                            <option value="budh">Budh</option>
+                                            <option value="jain">Jain</option>
+                                            
+                                    </select></td>
+</tr>
+
+<tr>
+    <td><label for="cetegory">Cetegory</label>
+        <td><select id="cetegory" name="cetegory" style="width:150px ;">
+                                            <option value="select">Select</option>
+                                            <option value="sc">SC</option>
+                                            <option value="st">ST</option>
+                                            <option value="obc">OBC</option>
+                                            <option value="general">GENERAL</option>
+                                            <option value="ews">EWS</option>
+                                    </select></td>
+</tr>
+<tr>
+    <td> <label for="address">address</label></td>
+    <td><input type="text" name="address" id="address"></td>
+</tr>
+                   
+         <tr>
+            <td>  <label for="subject">Subjects</label></td>
+            <td> <input type="checkbox" value="html"      name="html"      id="html"   >HTML
+                <input type="checkbox" value="css"       name="css"       id="css"   >CSS
+                <input type="checkbox" value="bootstrap" name="bootstrap" id="bootstrap" >BOOTSTRAP
+                <input type="checkbox" value="java" name="java" id="java" >JAVA
+                <input type="checkbox" value="python" name="python" id="python" >PYTHON
+                <input type="checkbox" value="react" name="react" id="react" >REACT
+                <input type="checkbox" value="nodejs" name="nodejs" id="nodejs" >NODEJS
+                <input type="checkbox" value="mongo" name="mongo" id="mongo" >MONGO
+                <input type="checkbox" value="cpp" name="cpp" id="cpp" >C++
+                <input type="checkbox" value="c" name="c" id="c" >C
+                <input type="checkbox" value="xml" name="xml" id="xml" >XML</td>
+         </tr>     
+              <tr>
+                <td><label for="college">College</label></td>
+        <td><select id="college" name="college">
+                        <option value="select">examination center</option>
+                        <option value="ghec">Green hills kumarhatii</option>
+                        <option value="nauni">Nauni universtity</option>
+                        <option value="lr">LR group of institute</option>
+                        <option value="shoolini">Shoolini university</option>
+                        <option value="bahara">Bahara university</option>
+                        <option value="hpu">HPU shimla</option></td>
+              </tr> 
+              <tr>
+                <td><label for="adharno">adhar card no(12 digit)</label></td>
+            <td><input type="phone" name="adhar" id="adhar"></td>
+            </tr>
+            <tr>
+                <td><label for="college">College</label></td>
+        <td><select id="college" name="college">
+                        <option value="select">select</option>
+                        <option value="direct">direct</option>
+                        <option value="leteral">leteral</option>
+                    </td>
+
+
+                <!-- submit here -->
+
+                <tr>
+                    <td colspan="2" class="btn" >
+                        <input type="submit" value="Submit" id="submit">
+                        <input type="reset" value="reset" id="reset">
+                    </td>
+                </tr>
+
+
+                    
+            
+
+            </tbody>
+        </table>
+        
+            </form>
+        
+        
+        </section>
+        <footer>
+            <h6>Footer</h6>
+        </footer>
+    </div>
+
+
+    <script src="js/validate.js"></script>
+</body>
+</html>
